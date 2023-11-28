@@ -1,0 +1,47 @@
+.pencil{
+    width: 20px;  
+    margin-bottom: 4px;
+    margin-left: 20px; 
+    cursor: pointer;
+}
+/* Estilo base */
+.pr2 {
+    box-shadow: 0 0 10px rgba(0, 32, 66, 0.986);
+    color: rgb(0, 0, 0);
+    max-width: 100%; /* Ajuste para ocupar el 100% del ancho en dispositivos pequeños */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(211, 191, 191, 0.308);
+}
+
+input[type="text"],
+.sele {
+    background-color: #6780a3a2;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.87);
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff; /* Añadir color de texto para mejorar la visibilidad */
+}
+
+/* Media query para ajustar estilos en pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+    .pr2 {
+        padding: 10px; /* Reducir el relleno en dispositivos pequeños */
+    }
+
+    input[type="number"],
+    .sele {
+        font-size: 14px; /* Reducir el tamaño de la fuente en dispositivos pequeños */
+    }
+}

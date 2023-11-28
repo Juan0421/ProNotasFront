@@ -1,0 +1,179 @@
+/* Estilo para el contenedor principal del formulario */
+.conten {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  justify-content: flex-end;
+  max-width: 100%;
+  margin: 9px;
+  border: 2px solid #1f262e77;
+  border-width: 4px 4px 4px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 32, 66, 0.986);
+  background-color: #0c020285;
+  color: aliceblue;
+  font-family: cursive;
+}
+
+.dox {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(121, 50, 50, 0.753);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.imagen img {
+  position: relative;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+/* Estilo para el formulario */
+.formul {
+  flex: 1;
+  max-width: 700px;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgb(205, 177, 206);
+  border-radius: 8px;
+  background-color: #470d0d69;
+}
+
+/* Estilo para el título del formulario */
+.h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+.dox .mb-4 {
+  position: relative;
+}
+
+
+.dox .mb-4 input{
+  width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+}
+.dox .mb-4 label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #00000075;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.dox .mb-4 input:focus ~ label,
+.dox .mb-4 input:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: #03e8f400;
+  font-size: 12px;
+
+}
+
+
+.dox label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.dox input[type="text"],
+.dox input[type="password"],
+.dox input[type="email"],
+.dox input[type="number"],
+.dox select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dox select {
+  color: #000000;
+  background-color: #6780a3de;
+}
+
+/* Estilo para el botón de enviar */
+.dox button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+
+.dox button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para las materias seleccionadas */
+.inputMates {
+  margin-top: 15px;
+}
+
+.materiaAdded {
+  background-color: #f8f8f869;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+
+/* Estilo para los grados seleccionados */
+.inputGrados {
+  margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .conten {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .imagen,
+  .formul {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

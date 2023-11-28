@@ -1,0 +1,166 @@
+/* Contenedor principal del contenido (imagen + formulario) */
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  justify-content: flex-end;
+  max-width: 100%;
+  margin: 9px;
+  border: 2px solid #1f262e77;
+  border-width: 4px 4px 4px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 32, 66, 0.986);
+  background-color: #0c020285;
+  color: aliceblue;
+  font-family: cursive;
+}
+
+
+/* Contenedor principal del formulario */
+.box {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(121, 50, 50, 0.753);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+/* Estilo para la imagen */
+.imagen img {
+  position: relative;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+/* Estilo para el formulario */
+.formulario {
+  flex: 1;
+  max-width: 700px;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px rgb(205, 177, 206);
+  border-radius: 8px;
+  background-color: #470d0d69;
+}
+
+/* Estilo para el título del formulario */
+.h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+.box .mb-3 {
+  position: relative;
+}
+
+
+.box .mb-3 input{
+  width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+}
+.box .mb-3 label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #00000075;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.box .mb-3 input:focus ~ label,
+.box .mb-3 input:valid ~ label{
+  top: -20px;
+  left: 0;
+  color: #03e8f400;
+  font-size: 12px;
+
+}
+
+.dox label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Estilo para los campos de formulario */
+.box .mb-3 {
+  margin-bottom: 15px;
+}
+
+.box label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="email"],
+.box input[type="number"],
+.box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilo para el botón de enviar */
+.box button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.box select {
+  color: #000000;
+  background-color: #6780a3de;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column; /* Apila los elementos en una columna en pantallas pequeñas */
+    align-items: stretch; /* Estira los elementos para ocupar el ancho completo */
+  }
+
+  .imagen,
+  .formulario {
+    flex: 1; /* Ambos ocupan el ancho completo en pantallas pequeñas */
+    margin-bottom: 0; /* Elimina el espaciado inferior en pantallas pequeñas */
+  }
+
+  .formulario {
+    max-width: none; /* Quita el ancho máximo en pantallas pequeñas */
+  }
+}

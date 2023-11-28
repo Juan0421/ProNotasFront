@@ -1,0 +1,59 @@
+.tableContenido {
+    padding: 40px;
+    justify-content: flex-end;
+    max-width: 100%;
+    margin: 9px;
+    border: 2px solid #1f262e77;
+    border-width: 4px 4px 4px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 32, 66, 0.986);
+    background-color: #0c020269;
+    color: aliceblue;
+    font-family: cursive;
+    text-align: center;
+    
+  }
+  
+  .tableContenido {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #0c020285;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.pro{
+    box-shadow: 0 0 10px rgba(0, 32, 66, 0.986);
+    color: rgb(0, 0, 0);
+    max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(211, 191, 191, 0.308);
+  position: relative;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+
+}
+
+.btn-custom {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 15px; /* Ajusta el relleno según sea necesario */
+    border: none;
+    border-radius: 5px; /* Ajusta el radio del borde según sea necesario */
+    cursor: pointer;
+}
+
+
+/* Estilos para el enlace del PDF (si es un enlace) */
+ .tableContenido a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.tableContenido a:hover {
+    text-decoration: underline;
+} 

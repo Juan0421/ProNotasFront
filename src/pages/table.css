@@ -1,0 +1,10 @@
+.icon{
+    height: 30px;
+    width: 20px;
+    cursor: pointer;
+}
+.fila{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
